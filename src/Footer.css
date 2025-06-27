@@ -1,0 +1,51 @@
+.footerContainer{
+    margin-top: 43px;
+    width: 100%;
+}
+.footerElement{
+    margin: auto;
+    width: 80%;
+    height: auto;
+    padding: 1em 0 0.3em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footerHead > span{
+    font-size: 1.3em;
+    font-weight: 500;
+    border-bottom: 2px solid #ff0800;
+}
+.footerHead > ul{
+    margin-top: 0.5em;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    gap: 1.5em;
+}
+.footerHead > ul > li{
+    color: rgb(207, 207, 207);
+}
+.footPageNav{
+    text-decoration: none;
+}
+.footPageNav:hover{
+    text-decoration: underline;
+}
+.footerElement > p{
+    font-size: 0.8em;
+    color: rgba(207, 207, 207, 0.593);
+}
+.footerNavs{
+    display: flex;
+    gap: 1.5em;
+    margin: 0.5em 0;
+}
+
+@media screen and (width < 600px) {
+    .footerHead > ul > li{
+        font-size: 0.7em;
+    }
+}

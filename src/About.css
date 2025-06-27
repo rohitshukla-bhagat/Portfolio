@@ -1,0 +1,151 @@
+.aboutMainCon {
+  padding-top: 4em;
+  width: 100%;
+  height: 40em;
+}
+.aboutElements {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 35em;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  padding: 1em 0;
+  margin-left: 3em;
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.greet {
+  padding-left: 0.1em;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.mainName {
+  font-size: 3em;
+  font-weight: 700;
+}
+.dynamictext {
+  color: #ff1810;
+  border-right: 2.5px solid white;
+  overflow: hidden;
+}
+.aboutText {
+  font-size: 0.9em;
+  color: rgba(245, 245, 245, 0.652);
+}
+
+.navs{
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  gap: 0.4em;
+}
+.resumeBtn {
+  padding: 0.9em 1em;
+  background-color: #ff0800;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 700;
+  border: 2px solid #ff0800;
+  border-radius: 1.5em;
+  width: 12em;
+  transition: all ease 0.3s;
+}
+.resumeBtn:hover {
+  background-color: #011011;
+  box-shadow: 0px 0px 10px #ff0800;
+  cursor: pointer;
+}
+.githubLogo{
+  width: 2.3em;
+  transition: all ease 0.2s;
+  border-radius: 50%;
+}
+.githubLogo , .linkedinLogo{
+  font-size: 0.9em;
+}
+.githubLogo:hover{
+  box-shadow: 0px 0px 10px white;
+}
+.linkedinLogo{
+  width: 2.2em;
+  transition: all ease 0.2s;
+  border-radius: 50%;
+}
+.linkedinLogo:hover{
+  box-shadow: 0px 0px 10px blue;
+}
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.image > img {
+  width: 25em;
+  border-bottom: 3px solid #ff0800;
+  filter: drop-shadow(0px 0px 10px #004a4f);
+}
+
+@media screen and (width < 1200px) {
+  .aboutMainCon {
+    font-size: 0.9em;
+  }
+  .image > img {
+    width: 22em;
+  }
+}
+@media screen and (width < 1150px) {
+  .aboutElements {
+    width: 80%;
+  }
+}
+@media screen and (width < 900px) {
+  .aboutElements {
+    width: 85%;
+  }
+  .image > img {
+    width: 20em;
+  }
+  .aboutMainCon {
+    font-size: 0.7em;
+  }
+}
+@media screen and (width < 700px) {
+  .aboutMainCon {
+    height: 55em;
+  }
+  .aboutElements {
+    grid-template-columns: 100%;
+    grid-template-rows: 25em 28em;
+  }
+  .info {
+    margin: 0;
+    padding: 0;
+    gap: 0.5em;
+    justify-content: flex-end;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .image {
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .image > img {
+    width: 16em;
+  }
+}
+@media screen and (width < 400px) {
+  .aboutElements {
+    width: 80%;
+  }
+  .aboutText {
+    width: 115%;
+  }
+}

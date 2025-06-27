@@ -1,0 +1,111 @@
+.projectContainer {
+  width: 100%;
+  margin-bottom: 43px;
+}
+.projectElement {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.projectHead {
+  text-align: center;
+}
+.projectHead > span {
+  font-size: 2em;
+  font-weight: 600;
+  border-bottom: 3px solid #ff0800;
+}
+.projectHead > p {
+  margin-top: 0.7em;
+  color: rgb(207, 207, 207);
+}
+.projectMain {
+  margin: auto;
+  width: 80%;
+  height: auto;
+  padding: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+.projectCard {
+  font-family: system-ui !important;
+  width: 18em;
+  height: 25em;
+  border: 1px solid #004a4f;
+  border-radius: 0.5em !important;
+  background-color: transparent !important;
+  box-shadow: 0px 0px 8px #004a4f !important;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+.projectDes {
+  font-size: 0.9em !important;
+  color: rgb(207, 207, 207);
+}
+.projectSkills > ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  font-size: 0.8em;
+}
+.projectSkills > ul > li {
+  border: 1px solid rgba(255, 255, 255, 0.342);
+  border-radius: 0.5em;
+  background-color: #db0700;
+  box-shadow: 0px 0px 2px #ff0800;
+  padding: 0.2em 0.5em;
+}
+
+.cardContentWrapper {
+  transition: 0.3s;
+}
+.cardContentWrapper.blurred {
+  filter: blur(3px);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.visitBtn {
+  padding: 0.5em 1em;
+  background-color: #ff0800;
+  color: white;
+  border: 2px solid #ff0800;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.visitBtn:hover{
+  background-color: transparent;
+  box-shadow: 0px 0px 8px #ff0800;
+}
+
+@media screen and (width < 1490px) {
+  .projectElement{
+    width: 90%;
+  }
+}
+@media screen and (width < 1000px) {
+  .projectHead > p{
+    font-size: 0.8em;
+  }
+}
+@media screen and (width < 500px) {
+  .projectHead > p{
+    font-size: 0.7em;
+  }
+}

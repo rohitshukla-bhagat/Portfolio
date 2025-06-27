@@ -1,0 +1,110 @@
+.skillsContainer{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 43px;
+}
+.skillsElement{
+    margin: auto;
+    width: 80%;
+    height: auto;
+}
+.skillText{
+    font-size: 2em;
+    border-bottom: 3px solid #ff0800;
+    font-weight: 600;
+}
+.skillIntro{
+    margin-top: 0.7em;
+    color: rgb(207, 207, 207);
+}
+.skillBoxContainer{
+    margin: auto;
+    margin-top: 1.3em;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+.skillBox{
+    border: 1px solid #004a4f;
+    box-shadow: 0px 0px 5px #004a4f;
+    border-radius: 0.5em;
+    height:17em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 27em;
+}
+.skillBox:hover{
+    box-shadow: 0px 0px 10px #004a4f;
+}
+.skillBox > div{
+    height: 13em;
+}
+.skillsHeading{
+    color: rgb(174, 174, 174);
+}
+.skillsLogo{
+    width: 1.5em;
+}
+.skills > ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.skills > ul > li{
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9em;
+    height: 2.3em;
+    padding: 0.2em 0;
+    border: 1px solid rgba(128, 128, 128, 0.574);
+    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.277);
+    gap: 0.3em;
+}
+
+@media screen and (width < 1390px) {
+    .skillBoxContainer{
+        width: 90%;
+    }
+}
+@media screen and (width < 1235px) {
+    .skillBoxContainer{
+        width: 95%;
+    }
+    .skillBox{
+        width: 24em ;
+    }
+}
+@media screen and (width < 800px) {
+    .skillBox{
+        width: 28em ;
+    }
+    .skillIntro{
+        font-size: 0.9em;
+    }
+}
+@media screen and (width < 450px) {
+    .skills > ul > li{
+        font-size: 0.7em;
+    }
+    .skillBox > div{
+        margin: 1em 0;
+    }
+    .skillBox ,.skillBox > div{
+        height: auto;
+    }
+    .skillsHeading{
+        margin-top: 0.5em;
+    }
+    .skillIntro{
+        font-size: 0.7em;
+    }
+}

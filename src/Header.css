@@ -1,0 +1,118 @@
+.grid {
+  display: grid;
+}
+.headerContainer {
+  height: 4em;
+  width: 100%;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 10;
+}
+.navbarGrid {
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
+  height: 4em;
+  padding: 0 3.2em;
+  margin: auto;
+  width: 70%;
+}
+.redish {
+  color: red;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5em;
+}
+nav > ul > li {
+  display: inline-block; /* Important to control the underline size */
+  position: relative;
+  cursor: pointer;
+}
+
+nav > ul > li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+nav > ul > li:hover::after {
+  width: 100%;
+}
+nav > ul > li > a {
+  text-decoration: none;
+}
+.hamMenu {
+  display: none;
+}
+@media screen and (width < 1150px) {
+  .navbarGrid {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 5; 
+}
+  .menuWeb {
+    display: none;
+  }
+  .hamMenu {
+    display: inline-block;
+    text-align: end;
+  }
+  .hamMenu > button {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .toggleBtn {
+    width: 3em;
+    height: auto;
+    background: transparent !important;
+    border: none;
+    cursor: pointer;
+  }
+  .toggleName {
+    margin-top: 0.4em;
+    width: 2.1em;
+  }
+  .menuMobile {
+    margin-top: 0.5em;
+    position: absolute;
+    top: 4em;
+    width: 100%;
+    font-weight: 400;
+    left: 0;
+    text-align: center;
+  }
+  .menuMobile > ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbarGrid {
+    width: 100%;
+  }
+  li::after {
+    height: 1px;
+  }
+}
+@media screen and (width < 400px) {
+  .navbarGrid {
+    padding: 0;
+    width: 95%;
+  }
+}
