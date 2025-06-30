@@ -5,6 +5,7 @@ import SkillsPage from "./Skills";
 import ExperiencePage from "./Experience";
 import ProjectPage from "./Projects";
 import EducationPage from "./Education";
+import AchievementPage from "./achievements";
 import ContactPage from "./Contact";
 import Footer from "./Footer";
 import { ToastContainer } from "react-toastify";
@@ -18,7 +19,7 @@ function App() {
       <a
         href="https://wa.me/919721248675"
         target="_blank"
-        class="whatsappFloat"
+        className="whatsappFloat"
         aria-label="Chat on WhatsApp"
       >
         <FontAwesomeIcon icon={faWhatsapp} style={{ color: "#00d62b" }} />
@@ -30,6 +31,7 @@ function App() {
       <ExperiencePage />
       <ProjectPage />
       <EducationPage />
+      <AchievementPage/>
       <ContactPage />
       <Footer />
     </div>
