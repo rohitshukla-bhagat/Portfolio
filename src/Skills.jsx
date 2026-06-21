@@ -140,6 +140,15 @@ export default function SkillsPage() {
                     />
                     JavaScript
                   </li>
+                  <li>
+                    <img
+                      src="./typescript.png"
+                      alt=""
+                      className="skillsLogo"
+                      style={{ width: "1.3em" }}
+                    />
+                    TypeScript
+                  </li>
                 </ul>
               </div>
             </div>
@@ -209,6 +218,15 @@ export default function SkillsPage() {
                       style={{ width: "1.3em", borderRadius: "50%" }}
                     />
                     Render
+                  </li>
+                  <li>
+                    <img
+                      src="./railway.png"
+                      alt=""
+                      className="skillsLogo"
+                      style={{ width: "1.3em", borderRadius: "50%" }}
+                    />
+                    Railway
                   </li>
                 </ul>
               </div>

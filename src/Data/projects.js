@@ -1,6 +1,25 @@
 const Projects = [
   {
     id: 1,
+    name: "CosmiqAI",
+    description:
+      "AI astronomy platform featuring Gemini-powered chat, celestial image analysis, NASA data integration, and personalized space exploration tools.",
+    skills: [
+      "NodeJS",
+      "MongoDB",
+      "TypeScript",
+      "ExpressJS",
+      "ReactJS",
+      "JWT Authentication",
+      "JavaScript",
+      "Gemini APIs",
+      "Google OAuth",
+    ],
+    image: "/cosmiqai.png",
+    link: "https://cosmiqai.netlify.app/",
+  },
+  {
+    id: 2,
     name: "GigFlow Platform",
     description:
       "Built a full-stack freelance platform enabling job posting, bidding, and hiring with secure JWT authentication.",
@@ -18,7 +37,7 @@ const Projects = [
     link: "https://gigflowflreelancing.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     name: "Influencer Portfolio",
     description:
       "A portfolio showcase the current subscribers and followers on social media platform and the brand collabration prices.",
@@ -33,7 +52,7 @@ const Projects = [
     link: "https://deveshinfluencer.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Freelancing Website",
     description:
       "A freelancing website that showcase and provide the services related to MERN Stack projects. Clients can see the services and also book it. ",
@@ -52,7 +71,7 @@ const Projects = [
     link: "https://bhagatdev.in",
   },
   {
-    id: 4,
+    id: 5,
     name: "Lost Items",
     description:
       "A Lost and Found Items management system. You can upload your lost and founded items and perform the CRUD operations and also send and get the response features to other.",
@@ -69,22 +88,13 @@ const Projects = [
     link: "https://lost-items.onrender.com/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Bhagat GameYard",
     description:
       'A online gaming website with three interactive games "Chit Kingdom - Traditional based on Wazir Badshah Chit Game" , "Jumble Words - Arrange the character" and "Simon Game - Remember blinked colors".',
     skills: ["JavaScript", "CSS", "HTML"],
     image: "/BGWeb.png",
     link: "https://bhagatgameyard.netlify.app/?utm_source=sideprojectors",
-  },
-  {
-    id: 6,
-    name: "Weather Application",
-    description:
-      'A Weather Application, you can easily search the weather and get information like "Temperature", "Feels like", "Humidity", "Pressure", "Wind", "Latitude & Longitude" and "Day, Date and Time" also.',
-    skills: ["JavaScript", "CSS", "HTML"],
-    image: "/weatherApp.png",
-    link: "https://rohitshukla-bhagat.github.io/wheatherApp/",
   },
   {
     id: 7,
